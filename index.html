@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#170b2b">
+<title>For CuTu — Our Diwali Wonderland ✨</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--gold:#ffd477;--pink:#ff9fbd;--cream:#fff4df;--night:#170b2b;--lilac:#cbb4ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#52234f 0,#241238 43%,#10091e 100%);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;background-image:radial-gradient(#ffe6a5 1px,transparent 1px);background-size:42px 42px;z-index:0}
+nav{position:fixed;z-index:20;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:13px 6%;background:#160b28c9;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}
+.brand{color:var(--gold);font-weight:700;letter-spacing:1.5px;font-size:.78rem}nav a{color:#ffe9ca;text-decoration:none;font-size:.82rem;margin-left:13px}
+main,header,footer{position:relative;z-index:1}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 20px 65px;position:relative;overflow:hidden}
+.hero-inner{max-width:790px}.eyebrow,.kicker{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:.7rem}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;color:var(--cream)}h1{font-size:clamp(3.4rem,12vw,7.4rem);line-height:.98;margin:22px 0;color:#fff0d4;text-shadow:0 0 45px #ffb94c45}h1 span{color:var(--pink);font-style:italic}
+.hero p{font-size:1.04rem;line-height:1.85;color:#e8d8e8;max-width:600px;margin:0 auto 25px}
+.btn{border:0;border-radius:999px;padding:13px 21px;background:linear-gradient(110deg,#ffd477,#ffad9d);color:#32162b;font-weight:700;cursor:pointer;box-shadow:0 8px 28px #ffb95c30;transition:.2s;font-family:inherit}.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}.btn.secondary{background:#ffffff12;color:#ffe8c5;border:1px solid #ffffff32;box-shadow:none}
+.diya-row{display:flex;justify-content:center;gap:25px;margin:35px 0}.diya{font-size:2.4rem;filter:drop-shadow(0 0 16px #ffb947);animation:float 3s ease-in-out infinite}.diya:nth-child(2){animation-delay:.5s}.diya:nth-child(3){animation-delay:1s}@keyframes float{50%{transform:translateY(-12px) rotate(4deg)}}
+section{padding:78px 18px;max-width:1000px;margin:auto;text-align:center;scroll-margin-top:70px}h2{font-size:clamp(2.1rem,7vw,3.5rem);margin:10px 0 12px}.sub{color:#d8c9df;line-height:1.75;max-width:650px;margin:0 auto 28px}
+.card{background:linear-gradient(145deg,#ffffff13,#ffffff07);border:1px solid #ffe4b52b;border-radius:23px;padding:25px;box-shadow:0 20px 60px #0003}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;text-align:left}.game h3,.card h3{font-size:1.45rem;margin:0 0 8px;color:#ffe2a7}.game p,.card p{color:#d7c8df;line-height:1.65;font-size:.93rem}.game .btn{margin-top:8px}
+.stat{color:var(--gold);font-weight:700}.tap-area{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px 0;min-height:58px}.tap-diya{font-size:1.8rem;background:#ffffff12;border:1px solid #ffffff25;border-radius:13px;padding:8px;cursor:pointer}
+.memory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:320px;margin:16px auto}.memory-card{height:58px;border-radius:12px;border:1px solid #ffffff30;background:#392044;color:var(--gold);font-size:1.4rem;cursor:pointer}.memory-card.open{background:#65405d}.memory-card.matched{background:#3c624e}
+.quiz-options{display:grid;gap:8px;margin-top:14px}.quiz-options button,.choice{background:#ffffff12;border:1px solid #ffffff25;color:var(--cream);border-radius:12px;padding:12px;cursor:pointer;text-align:left;font:inherit}.quiz-options button:hover,.choice:hover{background:#ffffff25}
+.tiny{font-size:.78rem;color:#bdaec6}.reveal{display:none;margin-top:17px;padding:18px;border-radius:16px;background:#ffffff10;color:#ffe5b7;line-height:1.85}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:left}.moment{padding:18px;border-radius:17px;background:#ffffff0c;border:1px solid #ffffff1c}.moment b{display:block;color:var(--gold);margin-bottom:7px}.moment p{margin:0;font-size:.88rem}
+.letters{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.letter{padding:18px;text-align:left;background:linear-gradient(145deg,#ffffff13,#ffffff08);border:1px solid #ffffff25;border-radius:18px;cursor:pointer;color:var(--cream);font:inherit}.letter span{display:block;color:var(--gold);font-size:1.1rem;font-family:'Playfair Display',serif;margin-bottom:6px}.letter small{color:#cbbbd2}
+.rangoli{width:min(300px,80vw);height:min(300px,80vw);margin:20px auto;position:relative;border-radius:50%;border:2px dashed #ffd47766;display:grid;place-items:center;background:radial-gradient(circle,#ffb8ca18 0 18%,transparent 19% 34%,#ffd47710 35% 48%,transparent 49%)}.rangoli button{position:absolute;border:0;background:transparent;font-size:2rem;cursor:pointer;filter:drop-shadow(0 0 8px #ffb477)}.rangoli button:nth-child(1){top:8%;left:43%}.rangoli button:nth-child(2){right:8%;top:42%}.rangoli button:nth-child(3){bottom:8%;left:43%}.rangoli button:nth-child(4){left:8%;top:42%}.rangoli button:nth-child(5){top:27%;left:24%}.rangoli button:nth-child(6){top:27%;right:24%}.rangoli button:nth-child(7){bottom:27%;left:24%}.rangoli button:nth-child(8){bottom:27%;right:24%}.rangoli .center{position:static;font-size:2.5rem}
+.heart-field{height:180px;position:relative;overflow:hidden;border:1px dashed #ffffff30;border-radius:16px;background:#ffffff08;margin:14px 0}.heart-target{position:absolute;border:0;background:none;font-size:2rem;cursor:pointer;transition:left .15s,top .15s}
+.letter-note{max-width:700px;margin:auto}.letter-note p{line-height:1.95;color:#f3e4e9}
+footer{text-align:center;padding:40px 20px 55px;color:#cbb9d3;font-size:.85rem}
+.spark{position:fixed;pointer-events:none;font-size:20px;animation:rise 1.6s ease-out forwards;z-index:50}@keyframes rise{to{transform:translateY(-170px) scale(.2) rotate(40deg);opacity:0}}
+#fireworks{position:fixed;inset:0;pointer-events:none;z-index:30}
+.progress{height:8px;background:#ffffff19;border-radius:20px;overflow:hidden;margin:12px 0}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--gold));transition:width .3s}
+
+.rangoli-studio{max-width:680px;margin:auto}.rangoli-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}.palette{display:flex;gap:10px;flex-wrap:wrap}.swatch{width:34px;height:34px;border-radius:50%;border:3px solid #ffffff55;background:var(--swatch);cursor:pointer;box-shadow:0 0 12px color-mix(in srgb,var(--swatch),transparent 45%)}.swatch.active{outline:2px solid var(--cream);outline-offset:3px;transform:scale(1.08)}.rangoli-actions{display:flex;gap:8px}.rangoli-canvas-wrap{width:min(100%,440px);aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;background:radial-gradient(circle,#321c42,#1a1029);border:1px solid #ffd47755;box-shadow:inset 0 0 35px #ffb5d322,0 0 35px #d58bff18}.rangoli-canvas-wrap canvas{width:100%;height:100%;display:block;touch-action:manipulation;cursor:crosshair}.game-stats{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:16px 0;color:#e9d9e8;font-size:.84rem}.diya-arena{height:230px;position:relative;overflow:hidden;border:1px solid #ffd47740;border-radius:18px;background:radial-gradient(ellipse at 50% 100%,#7a3d5225,transparent 65%),linear-gradient(145deg,#1b102c,#291438);margin:12px 0}.arena-hint{position:absolute;inset:0;display:grid;place-items:center;color:#bcaac7;font-size:.85rem;text-align:center;padding:15px}.floating-diya{position:absolute;border:0;background:radial-gradient(circle,#ffd47724,transparent 68%);font-size:2.1rem;cursor:pointer;width:58px;height:58px;border-radius:50%;filter:drop-shadow(0 0 10px #ffbd57);animation:diyaPop .22s ease-out,diyaFade 2.3s linear forwards;z-index:2}.floating-diya:active{transform:scale(.8)}@keyframes diyaPop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}@keyframes diyaFade{0%,65%{opacity:1}100%{opacity:.25}}.game-actions{text-align:center}.game-actions .btn{min-width:190px}
+@media(max-width:680px){nav{padding:12px 4%}.brand{font-size:.66rem}nav a{margin-left:8px;font-size:.72rem}.grid,.timeline,.letters{grid-template-columns:1fr}.card{padding:20px}section{padding:65px 15px}.hero p{font-size:.96rem}.moment{text-align:center}}
+</style>
+</head>
+<body>
+<canvas id="fireworks"></canvas>
+<nav><div class="brand">✦ MADE FOR CuTu</div><div><a href="#games">Play</a><a href="#letters">Letters</a><a href="#finale">Finale</a></div></nav>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">A festival of lights • a little world for one special person</div>
+  <h1>Hey, <span>CuTu</span> ✨</h1>
+  <p>This Diwali, I wanted to give you something that isn't wrapped in a box. So I made you a tiny wonderland — filled with lights, little games, secret notes and all the warmth I wish I could send through a screen.</p>
+  <button class="btn" onclick="document.querySelector('#welcome').scrollIntoView({behavior:'smooth'})">Come on in, CuTu 💗</button>
+  <div class="diya-row"><div class="diya">🪔</div><div class="diya">✨</div><div class="diya">🪔</div></div>
+  <div class="tiny">A little creation from Baby boy, with lots of love.</div>
+ </div>
+</header>
+<main>
+<section id="welcome"><div class="kicker">Your own little festival</div><h2>Tonight, the magic is yours</h2><p class="sub">Light a diya, make a rangoli, play a few games and open the notes. </p>
+<div class="card"><h3>🪔 A tiny diya-lighting ritual</h3><p>Tap the diya below and make a wish for the year ahead.</p><button id="wishDiya" class="btn" onclick="lightWish()">Light my diya ✨</button><div id="wishText" class="reveal">May your all wishh come truee, stay happy as always you are with mee, keep smiling, i love you, CuTu. 💛</div></div>
+</section>
+<section id="rangoli"><div class="kicker">Make something beautiful</div><h2>CuTu's rangoli studio 🌸</h2><p class="sub">Choose a colour, then tap the canvas to place glowing petals. Your design blooms symmetrically as you create it.</p>
+<div class="card rangoli-studio">
+ <div class="rangoli-tools">
+  <div class="palette" aria-label="Choose rangoli colour">
+   <button class="swatch active" style="--swatch:#ff8fb1" data-color="#ff8fb1" aria-label="Pink"></button>
+   <button class="swatch" style="--swatch:#ffd477" data-color="#ffd477" aria-label="Gold"></button>
+   <button class="swatch" style="--swatch:#a9e6c2" data-color="#a9e6c2" aria-label="Mint"></button>
+   <button class="swatch" style="--swatch:#bda7ff" data-color="#bda7ff" aria-label="Lavender"></button>
+   <button class="swatch" style="--swatch:#ff9d69" data-color="#ff9d69" aria-label="Orange"></button>
+   <button class="swatch" style="--swatch:#fff0d1" data-color="#fff0d1" aria-label="Ivory"></button>
+  </div>
+  <div class="rangoli-actions"><button class="btn secondary" onclick="undoPetal()">↶ Undo</button><button class="btn secondary" onclick="clearRangoli()">Clear</button></div>
+ </div>
+ <div class="rangoli-canvas-wrap"><canvas id="rangoliCanvas" width="600" height="600" aria-label="Interactive rangoli drawing area"></canvas></div>
+ <p class="tiny" id="rangoliMsg">Your fingertips, your colours, your little masterpiece.</p>
+ <button class="btn" onclick="finishRangoli()">✨ Finish my rangoli</button>
+</div></section>
+<section id="games"><div class="kicker">Let the fun begin</div><h2>Little challenges, big smiles</h2><p class="sub">Every game is a tiny excuse to make you smile. Your progress unlocks the final surprise.</p>
+<div class="card" style="text-align:left;margin-bottom:16px"><b>Wonderland progress</b><div class="progress"><i id="progressBar"></i></div><span class="tiny" id="progressText">0 of 4 little challenges complete</span></div>
+<div class="grid">
+ <div class="card game diya-game"><h3>🪔 Catch the glow</h3><p>Little diyas will appear and drift around the night. Tap them before they fade. Build a combo for bonus points!</p><div class="game-stats"><span>✨ Score <b class="stat" id="score">0</b></span><span>🔥 Combo <b class="stat" id="combo">0</b></span><span>⏳ <b class="stat" id="timer">30</b>s</span></div><div class="diya-arena" id="tapArea"><div class="arena-hint">Your glowing diyas will appear here</div></div><div class="game-actions"><button class="btn" id="diyaStart" onclick="startDiyas()">Start catching diyas</button></div><p class="tiny" id="tapMsg">Catch as many as you can in 30 seconds!</p></div>
+ <div class="card game"><h3>💖 Memory of us</h3><p>Find all four matching pairs. Take your time!</p><div class="memory-grid" id="memoryGrid"></div><p class="tiny" id="memoryMsg">Find the 4 pairs!</p><button class="btn secondary" onclick="resetMemory()">Shuffle cards</button></div>
+ <div class="card game"><h3>🌙 The CuTu quiz</h3><p>What's the one thing Baby boy wishes for you?</p><div class="quiz-options" id="quizOptions"><button onclick="quiz(this)">A. A year full of happiness</button><button onclick="quiz(this)">B. Dreams coming true</button><button onclick="quiz(this)">C. A thousand reasons to smile</button><button onclick="quiz(this)">D. All of these, always</button></div><p class="tiny" id="quizMsg">Choose carefully, special girl 😉</p></div>
+ <div class="card game"><h3>🎁 A secret gift</h3><p>Tap to unwrap a little message made just for you.</p><button class="btn" onclick="gift()">Unwrap your gift ✨</button><div id="giftText" class="reveal">If I could put one thing in a gift box, it would be a reminder that you matter the most in this whole world, i am so proud of you, and you deserve the gentlest, brightest kind of happiness and i would forever be thankful for choosing me as your forever partner — Baby boy 💗</div></div>
+</div>
+</section>
+<section id="heartgame"><div class="kicker">One more tiny game</div><h2>Find my heart 💘</h2><p class="sub">Catch the moving heart five times. It gets a little cheeky, just like this game.</p><div class="card"><div class="stat">Caught: <span id="heartsCaught">0</span> / 5</div><div class="heart-field" id="heartField"><button class="heart-target" id="heartTarget" onclick="catchHeart()">💗</button></div><button class="btn" onclick="startHeartGame()">Start catching hearts</button><p class="tiny" id="heartMsg">Psst… it's the heart Baby boy saved for you.</p></div></section>
+<section id="letters"><div class="kicker">A few words, whenever you need them</div><h2>Open when… 💌</h2><p class="sub">Choose a little envelope. Each one holds a reminder from Baby boy.</p><div class="letters">
+<button class="letter" onclick="openLetter('miss')"><span>💌 Open when you miss me</span><small>A little closeness, even from far away.</small></button>
+<button class="letter" onclick="openLetter('sad')"><span>🌷 Open when you're sad</span><small>A soft reminder that brighter moments are coming.</small></button>
+<button class="letter" onclick="openLetter('proud')"><span>⭐ Open when you're proud</span><small>Because your wins deserve to be celebrated.</small></button>
+<button class="letter" onclick="openLetter('smile')"><span>🦋 Open when you need a smile</span><small>A tiny pocket-sized dose of sunshine.</small></button>
+</div><div id="letterReveal" class="reveal" style="text-align:left"></div></section>
+<div class="kicker">A little story, still being written</div><h2>Our little universe ✨</h2><p class="sub">Some people make even ordinary moments feel a little golden. This is a tiny reminder of that.</p>
+<div class="moment"><b>🌱 6 oct 2026</b><p>The first night i texted you.</p></div>
+<div class="moment"><b>🌙 10 oct 2026</b><p>your first ever confession.</p></div>
+<div class="moment"><b>✨ 31 oct 2026</b><p>our finall confession.</p></div>
+<section id="finale"><div class="kicker">The last little surprise</div><h2>Ready for the Diwali finale?</h2><p class="sub">Complete the four main challenges above to unlock the special fireworks. Or tap the button and let the night sparkle anyway.</p><div class="card"><div id="finalLock" class="tiny">Your surprise is waiting…</div><button class="btn" onclick="finale()">Light up the sky for CuTu 🎆</button><div id="finalMessage" class="reveal"><h3>Happy Diwali, CuTu! ❤️</h3>
+
+Among all the lights and beautiful celebrations, you're one of the brightest parts of my world. I wish this Diwali brings you endless happiness, beautiful memories, and a million reasons to smile.💖
+
+May your life always shine brighter than a thousand diyas. And I hope I get to be a little part of your happiness, today and always.☺️💋
+
+Stay happy, keep smiling, and never forget how special you are to me.💋
+
+With forever love,<br><b>Baby boy</b> 💗</></div></div></section>
+</main>
+<footer>Made with 🩷, a little code, and a whole lot of affection.<br><span class="tiny">Happy Diwali, CuTu. Keep shining. 🪔</span></footer>
+<script>
+let completed=new Set(),score=0,time=30,gameTimer=null,spawnTimer=null,playing=false,combo=0,litCount=0;
+function complete(id){const core=['diyas','memory','quiz','gift'];if(!core.includes(id))return;completed.add(id);let n=completed.size;document.getElementById('progressBar').style.width=(n/4*100)+'%';document.getElementById('progressText').textContent=n+' of 4 little challenges complete';document.getElementById('finalLock').textContent=n===4?'All four challenges complete — your sky is ready! ✨':n+' of 4 challenges complete. Your finale is waiting!'}
+function lightWish(){document.getElementById('wishText').style.display='block';document.getElementById('wishDiya').textContent='Your wish is glowing 🪔';sparkles(12);complete('wish')}
+
+/* Rangoli studio: every tap creates an eight-way symmetrical flower. */
+const rc=document.getElementById('rangoliCanvas'),rctx=rc.getContext('2d');let rangoliColor='#ff8fb1',rangoliMarks=[];
+function drawRangoli(){
+ const c=rctx,w=rc.width,h=rc.height,cx=w/2,cy=h/2;c.clearRect(0,0,w,h);
+ const bg=c.createRadialGradient(cx,cy,15,cx,cy,300);bg.addColorStop(0,'#482448');bg.addColorStop(1,'#1b1029');c.fillStyle=bg;c.fillRect(0,0,w,h);
+ c.save();c.translate(cx,cy);
+ // ornamental dotted rings and central mandala guide
+ [75,145,220,275].forEach((r,i)=>{c.beginPath();c.arc(0,0,r,0,Math.PI*2);c.strokeStyle=i%2?'#ffd47736':'#ffb6d036';c.lineWidth=2;c.setLineDash(i===2?[4,9]:[]);c.stroke()});c.setLineDash([]);
+ for(let i=0;i<24;i++){let a=i*Math.PI/12;c.save();c.rotate(a);c.beginPath();c.ellipse(0,-268,7,13,0,0,Math.PI*2);c.fillStyle='#ffd47755';c.fill();c.restore()}
+ c.restore();
+ rangoliMarks.forEach(m=>{for(let i=0;i<8;i++){let a=i*Math.PI/4;c.save();c.translate(cx+m.x,cy+m.y);c.rotate(a);c.shadowColor=m.color;c.shadowBlur=14;c.fillStyle=m.color;c.beginPath();c.ellipse(0,-m.size/2,m.size*.28,m.size*.58,0,0,Math.PI*2);c.fill();c.shadowBlur=0;c.beginPath();c.arc(0,-m.size*.95,3.5,0,Math.PI*2);c.fillStyle='#fff2d8';c.fill();c.restore()}}); 
+ c.save();c.translate(cx,cy);c.shadowColor='#ffd477';c.shadowBlur=18;c.fillStyle='#ffd477';c.beginPath();c.arc(0,0,13,0,Math.PI*2);c.fill();c.shadowBlur=0;c.fillStyle='#fff0d1';c.font='22px serif';c.textAlign='center';c.textBaseline='middle';c.fillText('✦',0,1);c.restore();
+}
+rc.addEventListener('pointerdown',e=>{const b=rc.getBoundingClientRect(),x=(e.clientX-b.left)/b.width*600-300,y=(e.clientY-b.top)/b.height*600-300,dist=Math.hypot(x,y);if(dist>260)return;rangoliMarks.push({x,y,color:rangoliColor,size:20+Math.random()*12});drawRangoli();document.getElementById('rangoliMsg').textContent=rangoliMarks.length+' little flower'+(rangoliMarks.length===1 ? '' : 's')+' added — it is blooming!'});
+document.querySelectorAll('.swatch').forEach(s=>s.addEventListener('click',()=>{document.querySelectorAll('.swatch').forEach(x=>x.classList.remove('active'));s.classList.add('active');rangoliColor=s.dataset.color}));
+function undoPetal(){rangoliMarks.pop();drawRangoli();document.getElementById('rangoliMsg').textContent='One step back. Your design is still lovely.'}
+function clearRangoli(){rangoliMarks=[];drawRangoli();document.getElementById('rangoliMsg').textContent='A fresh canvas for a fresh burst of creativity.'}
+function finishRangoli(){if(rangoliMarks.length<3){document.getElementById('rangoliMsg').textContent='Add at least 3 flower taps to finish your rangoli 🌸';return}document.getElementById('rangoliMsg').textContent='CuTu, you made this little masterpiece. Happy Diwali! 🌸✨';complete('rangoli');sparkles(14)}
+drawRangoli();
+
+/* Diya catcher: moving pop-ups, combo points, 30-second round. */
+function spawnDiya(){if(!playing)return;const area=document.getElementById('tapArea');const hint=area.querySelector('.arena-hint');if(hint)hint.remove();const b=document.createElement('button');b.className='floating-diya';b.textContent=['🪔','✨','🏮'][Math.floor(Math.random()*3)];b.setAttribute('aria-label','Catch glowing diya');b.style.left=Math.max(0,Math.random()*(area.clientWidth-62))+'px';b.style.top=Math.max(0,Math.random()*(area.clientHeight-62))+'px';b.style.animationDuration=(1.8+Math.random()*.7)+'s';b.onclick=()=>{if(!playing||b.dataset.hit)return;b.dataset.hit='1';combo++;score+=10+Math.min(combo-1,5)*2;litCount++;document.getElementById('score').textContent=score;document.getElementById('combo').textContent=combo;b.textContent='💥';b.style.transform='scale(1.35)';b.style.opacity='0';setTimeout(()=>b.remove(),120);if(litCount>=15){playing=false;clearInterval(gameTimer);clearInterval(spawnTimer);area.querySelectorAll('.floating-diya').forEach(x=>x.remove());document.getElementById('tapMsg').textContent='Incredible! You lit 15 diyas — you won! Bonus sparkle! 🌟';complete('diyas')}};area.appendChild(b);setTimeout(()=>{if(b.isConnected){b.remove();if(playing){combo=0;document.getElementById('combo').textContent=combo}}},2200)}
+function startDiyas(){clearInterval(gameTimer);clearInterval(spawnTimer);playing=true;score=0;time=30;combo=0;litCount=0;const a=document.getElementById('tapArea');a.innerHTML='';['score','combo'].forEach(id=>document.getElementById(id).textContent='0');document.getElementById('timer').textContent=time;document.getElementById('tapMsg').textContent='Tap fast! Every catch adds points; a streak adds bonus points.';document.getElementById('diyaStart').textContent='Restart game';spawnDiya();spawnTimer=setInterval(spawnDiya,620);gameTimer=setInterval(()=>{time--;document.getElementById('timer').textContent=time;if(time<=0){playing=false;clearInterval(gameTimer);clearInterval(spawnTimer);a.querySelectorAll('.floating-diya').forEach(x=>x.remove());document.getElementById('tapMsg').textContent='Time! You caught '+litCount+' glowing diyas and scored '+score+' points. '+(litCount>=15?'Amazing work! 🌟':'Play again and beat your score!');if(litCount>=15)complete('diyas')}},1000)}
+const symbols=['💗','🪔','🌸','⭐','💗','🪔','🌸','⭐'];let first=null,lock=false,matches=0;
+function resetMemory(){first=null;lock=false;matches=0;let g=document.getElementById('memoryGrid');g.innerHTML='';document.getElementById('memoryMsg').textContent='Find the 4 pairs!';[...symbols].sort(()=>Math.random()-.5).forEach(s=>{let b=document.createElement('button');b.className='memory-card';b.textContent='?';b.dataset.symbol=s;b.onclick=()=>flip(b);g.appendChild(b)})}
+function flip(b){if(lock||b.classList.contains('open')||b.classList.contains('matched'))return;b.classList.add('open');b.textContent=b.dataset.symbol;if(!first){first=b;return}if(first.dataset.symbol===b.dataset.symbol){first.classList.add('matched');b.classList.add('matched');first=null;matches++;if(matches===4){document.getElementById('memoryMsg').textContent='Every pair found! Your memory is sparkling. 💞';complete('memory')}}else{lock=true;let p=first;first=null;setTimeout(()=>{p.classList.remove('open');b.classList.remove('open');p.textContent='?';b.textContent='?';lock=false},700)}}
+function quiz(b){document.getElementById('quizMsg').textContent=b.textContent.startsWith('D.')?'You got it. All of these, and so much more. 💗':'That is a lovely wish too… but Baby boy wishes for ALL of them. Try D!';if(b.textContent.startsWith('D.')){document.querySelectorAll('#quizOptions button').forEach(x=>x.disabled=true);complete('quiz')}}
+function gift(){document.getElementById('giftText').style.display='block';complete('gift');sparkles(10)}
+const notes={miss:'If you miss me, look at the same moon for a second and remember that somewhere, Baby boy is wishing you a beautiful day. Sending you the biggest virtual hug. 💗',sad:'You do not have to be cheerful every second. Take a breath, be gentle with yourself and remember that one difficult moment does not define your whole story. I am cheering for you. 🌷',proud:'I hope you pause and celebrate yourself. Every bit of effort counts, even the things nobody else sees. I am proud of you, CuTu. ⭐',smile:'Tiny reminder: you have a smile that deserves to be used often. So here is your official permission to smile at absolutely nothing. And maybe think of Baby boy. 😌💞'};
+function openLetter(k){let d=document.getElementById('letterReveal');d.textContent=notes[k];d.style.display='block';d.scrollIntoView({behavior:'smooth',block:'center'});sparkles(5)}
+let caught=0,heartRunning=false;
+function moveHeart(){let h=document.getElementById('heartTarget'),f=document.getElementById('heartField');h.style.left=Math.random()*Math.max(0,f.clientWidth-45)+'px';h.style.top=Math.random()*Math.max(0,f.clientHeight-45)+'px'}
+function startHeartGame(){caught=0;heartRunning=true;document.getElementById('heartsCaught').textContent=0;document.getElementById('heartMsg').textContent='Catch it if you can!';moveHeart()}
+function catchHeart(){if(!heartRunning)return;caught++;document.getElementById('heartsCaught').textContent=caught;if(caught>=5){heartRunning=false;document.getElementById('heartMsg').textContent='You caught it! This heart is yours, CuTu. 💘';complete('heart')}else moveHeart()}
+function openSong(){let u=document.getElementById('songLink').value.trim();if(u){try{let url=new URL(u);if(url.protocol==='https:'||url.protocol==='http:')window.open(url.href,'_blank','noopener')}catch(e){alert('Please paste a valid playlist link.')}}else alert('Paste your favourite playlist link first.')}
+function sparkles(n){for(let i=0;i<n;i++){let s=document.createElement('span');s.className='spark';s.textContent=['✨','💖','🌟','🪔','🌸'][i%5];s.style.left=(5+Math.random()*90)+'vw';s.style.top=(35+Math.random()*55)+'vh';document.body.appendChild(s);setTimeout(()=>s.remove(),1700)}}
+const canvas=document.getElementById('fireworks'),ctx=canvas.getContext('2d');let particles=[],raf=null;
+function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}addEventListener('resize',resize);resize();
+function burst(x,y){for(let i=0;i<65;i++){let a=Math.random()*Math.PI*2,s=1+Math.random()*4;particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:50+Math.random()*25,hue:Math.random()*60+300})}}
+function animate(){ctx.clearRect(0,0,innerWidth,innerHeight);particles=particles.filter(p=>p.life>0);for(let p of particles){p.x+=p.vx;p.y+=p.vy;p.vy+=.035;p.vx*=.99;p.life--;ctx.globalAlpha=Math.max(0,p.life/70);ctx.fillStyle='hsl('+p.hue+',100%,70%)';ctx.beginPath();ctx.arc(p.x,p.y,2.3,0,Math.PI*2);ctx.fill()}ctx.globalAlpha=1;if(particles.length)raf=requestAnimationFrame(animate);else{cancelAnimationFrame(raf);raf=null}}
+function finale(){document.getElementById('finalMessage').style.display='block';complete('finale');for(let i=0;i<7;i++)setTimeout(()=>{burst(innerWidth*(.15+Math.random()*.7),innerHeight*(.18+Math.random()*.45));if(!raf)animate()},i*260);sparkles(24);document.getElementById('finalMessage').scrollIntoView({behavior:'smooth',block:'center'})}
+resetMemory();moveHeart();
+</script>
+</body></html>
